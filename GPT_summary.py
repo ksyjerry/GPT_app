@@ -12,7 +12,7 @@ st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
 
 
-article_text = st.text_area('요약할 뉴스나 텍스트를 입력해주세요')
+article_text = st.text_area('요약할 뉴스나 텍스트를 입력해주세요 (영문의 효과성이 높습니다!)')
 temp = st.slider('요약스타일을 설정하세요 (설정 수치에따라 다양한 결과물을 만나볼 수 있습니다)',0.0,1.0,0.5)
 if len(article_text) >1200:
     st.warning('좀 더 짧은 텍스트를 입력해주세요')
