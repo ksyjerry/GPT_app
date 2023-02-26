@@ -12,7 +12,7 @@ st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
 
 
-article_text = st.text_area('요약할 뉴스나 텍스트를 입력해주세요', height=300)
+article_text = st.text_area('요약할 뉴스나 텍스트를 입력해주세요', height=300, placeholder ='100문자 이상 1500문자 이내로 입력')
 lang = st.radio("요약에 사용될 언어를 선택해주세요",  ('국문', '영문'))
 temp = st.slider('요약스타일을 설정하세요 (설정 수치에따라 다양한 결과물을 만나볼 수 있습니다)',0.0,1.0,0.5)
 
