@@ -19,7 +19,7 @@ temp = st.slider('요약스타일을 설정하세요 (설정 수치에따라 다
 if lang =='국문':
     text = "이어지는 뉴스를 8개의 문장으로 요약해주세요: " +article_text
 else:
-    text = "Please convert the following sentences into 4 to 8 summarized sentences " +article_text
+    text = "Please convert the following sentences into 4 summarized Korean sentences " +article_text
 
 if len(article_text) >1200:
     st.warning('좀 더 짧은 텍스트를 입력해주세요')
