@@ -21,7 +21,7 @@ if lang =='국문':
 else:
     text = "Please convert the following sentences into 4 summarized Korean sentences " +article_text
 
-if len(article_text) >1200:
+if len(article_text) >2800:
     st.warning('좀 더 짧은 텍스트를 입력해주세요')
 
 elif len(article_text) >100:
@@ -29,7 +29,7 @@ elif len(article_text) >100:
         response = openai.Completion.create(
         engine = "text-davinci-003",
         prompt = text,
-        max_tokens = 1024, 
+        max_tokens = 4000, 
         temperature = temp
     )
         res = response['choices'][0]['text']
