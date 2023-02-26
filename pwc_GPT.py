@@ -22,8 +22,9 @@ def generate_response(prompt):
 
 
 
-st.title('Welcome to PwC GPT')
-st.write('developed by Assurance DA')
+st.title('PwC Korea GPT')
+st.header('대화형 Chatbot')
+st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
 # user_input = st.text_input('말해보세요', key = 'input')
 # st.write(generate_response(user_input))
