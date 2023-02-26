@@ -37,7 +37,7 @@ if 'past' not in st.session_state:
     st.session_state['past']=[]
 
 def get_text():
-    input_text = st.text_input('안녕하세요? 반갑습니다!' , key ='input')
+    input_text = st.text_input('안녕하세요! 무엇을 도와드릴까요?' , key ='input')
     return input_text
 
 user_input = get_text()
