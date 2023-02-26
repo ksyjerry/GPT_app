@@ -6,7 +6,7 @@ from streamlit_chat import message
 openai.api_key = st.secrets["api_secret"]
 
 st.title('PwC Korea GPT')
-st.header('문장요약 로봇')
+st.header('문장요약 Robot')
 st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
 
