@@ -20,7 +20,7 @@ def generate_response(prompt):
     message = completions.choices[0].text
     return message
 
-
+# change
 
 st.title('PwC Korea GPT')
 st.header('대화형 Chatbot')
