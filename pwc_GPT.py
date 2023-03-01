@@ -22,7 +22,7 @@ def generate_response(prompt):
 
 # change
 
-st.title('PwC Korea GPT')
+st.title('Samil PwC Accounting GPT')
 st.header('대화형 Chatbot')
 st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
