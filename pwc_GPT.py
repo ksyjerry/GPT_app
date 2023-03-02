@@ -24,7 +24,7 @@ openai.api_key = st.secrets["api_secret"]
 
 def generate_response(prompt):
     completions = openai.Completion.create(
-        engine = "gpt-3.5-turbo4",
+        engine = "gpt-3.5-turbo",
         messages=[
         {"role": "system", "content": "당신은 IFRS 회계전문가입니다."},
         {"role": "user", "content": prompt}
@@ -37,7 +37,7 @@ def generate_response(prompt):
 # change
 
 st.title('Samil PwC Accounting GPT')
-st.header('회계천재 챗봇')
+st.header('회계천재 Chatbot')
 st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
 # user_input = st.text_input('말해보세요', key = 'input')
