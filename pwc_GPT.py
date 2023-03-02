@@ -31,7 +31,7 @@ def generate_response(prompt):
     ]
     )
 
-    message = completions.choices[0].text
+    message = completions.choices[0].content
     return message
 
 # change
