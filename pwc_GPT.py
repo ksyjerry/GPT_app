@@ -24,7 +24,7 @@ def generate_response(prompt):
 # change
 
 st.title('Samil PwC Accounting GPT')
-st.header('대화형 Chatbot')
+st.header('공시용계정과목 생성기')
 st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
 # user_input = st.text_input('말해보세요', key = 'input')
