@@ -8,10 +8,11 @@ openai.api_key = st.secrets["api_secret"]
 # curie:ft-personal-2023-03-01-14-34-54
 # "text-davinci-003
 # gpt-3.5-turbo
+# curie:ft-personal-2023-03-02-00-46-42
 
 def generate_response(prompt):
     completions = openai.Completion.create(
-        engine = "curie:ft-personal-2023-03-01-14-34-54",
+        engine = "curie:ft-personal-2023-03-02-00-46-42",
         prompt = prompt,
         max_tokens = 34, 
         n = 1,
@@ -37,7 +38,7 @@ def generate_response(prompt):
 
 
 st.title('Samil PwC Accounting GPT')
-st.header('회계천재 Chatbot')
+st.header('공시용 계정과목 분류bot')
 st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
 # user_input = st.text_input('말해보세요', key = 'input')
