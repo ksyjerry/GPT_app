@@ -9,7 +9,7 @@ openai.api_key = st.secrets["api_secret"]
 # "text-davinci-003
 # gpt-3.5-turbo
 
-def generate_response():
+def generate_response(prompt):
     completions = openai.Completion.create(
         engine = "curie:ft-personal-2023-03-01-14-34-54",
         prompt = prompt,
