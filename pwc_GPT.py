@@ -5,16 +5,17 @@ from streamlit_chat import message
 
 openai.api_key = st.secrets["api_secret"]
 
-
+# curie:ft-personal-2023-03-01-14-34-54
+# "text-davinci-003
 
 def generate_response(prompt):
     completions = openai.Completion.create(
-        engine = "text-davinci-003",
+        engine = "curie:ft-personal-2023-03-01-14-34-54",
         prompt = prompt,
-        max_tokens = 1024, 
+        max_tokens = 34, 
         n = 1,
         stop = None, 
-        temperature = 0.5
+        temperature = 0
     )
 
     message = completions.choices[0].text
