@@ -9,33 +9,32 @@ openai.api_key = st.secrets["api_secret"]
 # "text-davinci-003
 # gpt-3.5-turbo
 
-def generate_response(prompt):
-    completions = openai.Completion.create(
-        engine = "curie:ft-personal-2023-03-01-14-34-54",
-        prompt = prompt,
-        max_tokens = 34, 
-        n = 1,
-        stop = None, 
-        temperature = 0
-    )
-
-    message = completions.choices[0].text
-    return message
-
 # def generate_response(prompt):
 #     completions = openai.Completion.create(
-#         engine = "gpt-3.5-turbo",
-#         messages=[
-#         {"role": "system", "content": "당신은 IFRS 회계전문가입니다."},
-#         {"role": "user", "content": prompt}
-#     ]
+#         engine = "curie:ft-personal-2023-03-01-14-34-54",
+#         prompt = prompt,
+#         max_tokens = 34, 
+#         n = 1,
+#         stop = None, 
+#         temperature = 0
 #     )
 
-#     message = completions['choices']
-# #     ['message']['content']
+#     message = completions.choices[0].text
 #     return message
 
-# change
+def generate_response(prompt):
+    completions = openai.Completion.create(
+        engine = "gpt-3.5-turbo",
+        messages=[
+        {"role": "system", "content": "당신은 IFRS 회계전문가입니다."},
+        {"role": "user", "content": prompt}
+    ]
+    )
+
+    message = completions.choices[0]['message']['content']
+    return message
+
+change
 
 st.title('Samil PwC Accounting GPT')
 st.header('회계천재 Chatbot')
