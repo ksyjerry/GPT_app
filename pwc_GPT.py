@@ -31,13 +31,13 @@ def generate_response(prompt):
     ]
     )
 
-    message = completions.choices[0].content
+    message = completions.choices['message']['content']
     return message
 
 # change
 
 st.title('Samil PwC Accounting GPT')
-st.header('회계천재 ')
+st.header('회계천재 챗봇')
 st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
 # user_input = st.text_input('말해보세요', key = 'input')
