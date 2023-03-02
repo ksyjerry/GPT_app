@@ -14,7 +14,7 @@ def generate_response(prompt):
     completions = openai.Completion.create(
         engine = "curie:ft-personal-2023-03-02-00-46-42",
         prompt = "다음을 공시용계정과목으로 변경해줘: "+prompt,
-        max_tokens = 34, 
+        max_tokens = 50, 
         n = 1,
         stop = None, 
         temperature = 0
