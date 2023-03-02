@@ -34,7 +34,7 @@ def generate_response(prompt):
     message = completions.choices[0]['message']['content']
     return message
 
-change
+
 
 st.title('Samil PwC Accounting GPT')
 st.header('회계천재 Chatbot')
