@@ -12,7 +12,7 @@ openai.api_key = st.secrets["api_secret"]
 
 def generate_response(prompt):
     completions = openai.Completion.create(
-        engine = "text-davinci-003",
+        engine = "curie:ft-personal-2023-03-02-00-46-42",
         prompt = prompt,
         max_tokens = 4000, 
         n = 1,
