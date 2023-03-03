@@ -38,7 +38,7 @@ def generate_response(prompt):
 
 
 st.title('Samil PwC Accounting GPT')
-st.header('계정과목 분류 챗봇')
+st.header('GPT 챗봇')
 st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
 # user_input = st.text_input('말해보세요', key = 'input')
