@@ -49,7 +49,7 @@ question = st.text_input('Say words: ')
 completions = openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
   messages=[
-        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "system", "content": "당신은 IFRS 회계전문가입니다."},
         {"role": "user", "content": question}
   
     ]
