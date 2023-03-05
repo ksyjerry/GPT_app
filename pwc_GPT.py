@@ -5,6 +5,10 @@ from streamlit_chat import message
 
 openai.api_key = st.secrets["api_secret"]
 
+
+
+
+
 # curie:ft-personal-2023-03-01-14-34-54
 # "text-davinci-003
 # gpt-3.5-turbo
@@ -23,17 +27,17 @@ openai.api_key = st.secrets["api_secret"]
 #     message = completions.choices[0].text
 #     return message
 
-def generate_response(prompt):
-    completions = openai.ChatCompletion.create(
-        engine = "gpt-3.5-turbo",
-        messages=[
-        {"role": "system", "content": "당신은 IFRS 회계전문가입니다."},
-        {"role": "user", "content": prompt}
-    ]
-    )
+# def generate_response(prompt):
+#     completions = openai.ChatCompletion.create(
+#         engine = "gpt-3.5-turbo",
+#         messages=[
+#         {"role": "system", "content": "당신은 IFRS 회계전문가입니다."},
+#         {"role": "user", "content": prompt}
+#     ]
+#     )
 
-    message = completions.choices[0]['message']['content']
-    return message
+#     message = completions.choices[0]['message']['content']
+#     return message
 
 
 
@@ -41,8 +45,17 @@ st.title('Samil PwC Accounting GPT')
 st.header('IFRS 챗봇')
 st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
-user_input = st.text_input('말해보세요', key = 'input')
-st.write(generate_response(user_input))
+question = st.text_input('Say words: ')
+completions = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": question}
+  
+    ]
+)
+
+st.write(completions.choices[0]['message']['content'])
 
 
 # if 'generated' not in st.session_state:
