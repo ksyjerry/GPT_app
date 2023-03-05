@@ -45,7 +45,7 @@ st.title('Samil PwC Accounting GPT')
 st.header('IFRS 챗봇')
 st.write('Developed by Assurance DA (jae-dong.kim@pwc.com)')
 
-question = st.text_input('질문을 입력하세요(English Questions Preferred: ')
+question = st.text_input('질문을 입력하세요(English Questions Preferred) ')
 completions = openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
   messages=[
