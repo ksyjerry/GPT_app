@@ -9,10 +9,10 @@ openai.api_key = st.secrets["api_secret"]
 
 
 
-curie:ft-personal-2023-03-01-14-34-54
-"text-davinci-003
-gpt-3.5-turbo
-curie:ft-personal-2023-03-02-00-46-42
+# curie:ft-personal-2023-03-01-14-34-54
+# "text-davinci-003
+# gpt-3.5-turbo
+# curie:ft-personal-2023-03-02-00-46-42
 
 def generate_response(prompt):
     completions = openai.Completion.create(
